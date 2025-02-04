@@ -49,4 +49,14 @@
     <servlet-name>SupprimerContactServlet</servlet-name>
     <url-pattern>/SupprimerContactServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ConfigurationServlet</display-name>
+    <servlet-name>ConfigurationServlet</servlet-name>
+    <servlet-class>controller.ConfigurationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ConfigurationServlet</servlet-name>
+    <url-pattern>/ConfigurationServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

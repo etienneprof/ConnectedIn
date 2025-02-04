@@ -31,7 +31,7 @@
 		</div>
 		<div>
 			<label for="poste">Poste : </label>
-			<input type="text" id="poste" name="poste" value="${contact.poste }">
+			<input type="text" id="poste" name="poste" value="${contact == null ? cookie.defaut.value : contact.poste }">
 		</div>
 		<div>
 			<label for="spe">Spécialité : </label>

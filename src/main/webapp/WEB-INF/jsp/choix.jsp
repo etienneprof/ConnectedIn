@@ -13,5 +13,7 @@
 	</form>
 	
 	<a href="ajouter"><button>Ajouter un contact</button></a>
+	<br>
+	<a href="configuration">Page de configuration</a>
 </body>
 </html>
