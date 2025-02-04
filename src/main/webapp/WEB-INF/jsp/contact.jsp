@@ -7,6 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<%@ include file="fragments/entete.jspf" %>
+	
 	<fieldset>
 		<p>Id : ${contact.id }</p>
 		<p>Nom : ${contact.nom }</p>

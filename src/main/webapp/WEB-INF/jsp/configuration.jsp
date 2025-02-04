@@ -7,6 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<%@ include file="fragments/entete.jspf" %>
+
 	<h2>Page de configuration</h2>
 	<p>Vous avez accédé à cette page ${acces } fois.</p>
 	<a href="choix">Retour à l'accueil</a>

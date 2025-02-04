@@ -31,4 +31,8 @@ public class ContactBLL {
 	public void delete(int id) {
 		dao.delete(id);
 	}
+
+	public List<Contact> selectByNomOrPrenom(String filtre) {
+		return dao.selectByNomOrPrenom(filtre);
+	}
 }
