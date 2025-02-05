@@ -16,27 +16,40 @@
 		<input type="submit" value="Rechercher">
 	</form>
 
-	<div>
+	<table>
+		<thead>
+			<tr>
+				<th>Contact</th>
+				<th>Poste</th>
+				<th>Action</th>
+			</tr>
+		</thead>
+		<tbody>
 		<c:forEach var="contact" items="${contacts }">
-			<div class="card">
-				<p>${contact.nom } ${contact.prenom }</p>
-				<p>${contact.poste }</p>
-				<div>
+			<tr>
+				<td>${contact.nom } ${contact.prenom }</td>
+				<td>${contact.poste }</td>
+				<td>
 					<form action="contacts" method="get">
 						<input type="hidden" name="id" value="${contact.id }">
-						<input type="submit" value="Consulter">
+						<button type="submit">
+							<img src="https://cdn-icons-png.flaticon.com/512/694/694985.png" alt="details">
+						</button>
 					</form>
 					<form action="supprimer" method="post">
 						<input type="hidden" name="id" value="${contact.id }">
-						<input type="submit" value="Supprimer">
+						<button type="submit">
+							<img src="https://cdn-icons-png.flaticon.com/512/484/484662.png" alt="supprimer">
+						</button>
 					</form>
-				</div>
-			</div>
+				</td>
+			</tr>
 		</c:forEach>
-	</div>
+		</tbody>
+	</table>
 	
 	
-	<a href="ajouter"><button>Ajouter un contact</button></a>
+	<a href="ajouter"><button class="ajouter">Ajouter un contact</button></a>
 	<br>
 	<a href="configuration">Page de configuration</a>
 </body>
